@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/component-Eureka-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-account/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-assets/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-customer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-debt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-organization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public-springboot-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public-springboot-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public-springboot-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public-utils/src/main/java" charset="UTF-8" />
+  </component>
+</project>
