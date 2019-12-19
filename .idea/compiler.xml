@@ -11,17 +11,16 @@
         <module name="public-springboot-cache" />
         <module name="public-springboot-jdbc" />
         <module name="public-utils" />
-        <module name="component-Eureka-service" />
-        <module name="project-account" />
         <module name="project-debt" />
+        <module name="project-account" />
+        <module name="public-springboot-mybatis" />
         <module name="project-organization" />
         <module name="project-assets" />
-        <module name="public-springboot-mybatis" />
+        <module name="component-Eureka-service" />
         <module name="project-payment" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="project-debt" target="1.8" />
       <module name="project-debtAccount" target="1.8" />
     </bytecodeTargetLevel>
   </component>

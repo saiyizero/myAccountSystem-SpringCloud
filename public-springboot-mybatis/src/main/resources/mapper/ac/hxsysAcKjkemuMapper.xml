@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.virugan.mapper.ac.hxsysAcKjkemuMapper" >
+  <resultMap id="BaseResultMap" type="com.virugan.tables.ac.hxsysAcKjkemu" >
+    <id column="kemuhaoo" property="kemuhaoo" jdbcType="VARCHAR" />
+    <id column="farendma" property="farendma" jdbcType="VARCHAR" />
+    <result column="kemumnch" property="kemumnch" jdbcType="VARCHAR" />
+    <result column="shjikemu" property="shjikemu" jdbcType="VARCHAR" />
+    <result column="kemuleib" property="kemuleib" jdbcType="VARCHAR" />
+    <result column="kemujibi" property="kemujibi" jdbcType="DECIMAL" />
+    <result column="mocekmbz" property="mocekmbz" jdbcType="VARCHAR" />
+    <result column="yuexingz" property="yuexingz" jdbcType="VARCHAR" />
+    <result column="bnbwbioz" property="bnbwbioz" jdbcType="VARCHAR" />
+    <result column="shijchuo" property="shijchuo" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    kemuhaoo, farendma, kemumnch, shjikemu, kemuleib, kemujibi, mocekmbz, yuexingz, bnbwbioz, 
+    shijchuo
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.virugan.tables.ac.hxsysAcKjkemuExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from hxsys_ac_kjkemu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.virugan.tables.ac.hxsysAcKjkemuKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from hxsys_ac_kjkemu
+    where kemuhaoo = #{kemuhaoo,jdbcType=VARCHAR}
+      and farendma = #{farendma,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.virugan.tables.ac.hxsysAcKjkemuKey" >
+    delete from hxsys_ac_kjkemu
+    where kemuhaoo = #{kemuhaoo,jdbcType=VARCHAR}
+      and farendma = #{farendma,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.virugan.tables.ac.hxsysAcKjkemuExample" >
+    delete from hxsys_ac_kjkemu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.virugan.tables.ac.hxsysAcKjkemu" >
+    insert into hxsys_ac_kjkemu (kemuhaoo, farendma, kemumnch, 
+      shjikemu, kemuleib, kemujibi, 
+      mocekmbz, yuexingz, bnbwbioz, 
+      shijchuo)
+    values (#{kemuhaoo,jdbcType=VARCHAR}, #{farendma,jdbcType=VARCHAR}, #{kemumnch,jdbcType=VARCHAR}, 
+      #{shjikemu,jdbcType=VARCHAR}, #{kemuleib,jdbcType=VARCHAR}, #{kemujibi,jdbcType=DECIMAL}, 
+      #{mocekmbz,jdbcType=VARCHAR}, #{yuexingz,jdbcType=VARCHAR}, #{bnbwbioz,jdbcType=VARCHAR}, 
+      #{shijchuo,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.virugan.tables.ac.hxsysAcKjkemu" >
+    insert into hxsys_ac_kjkemu
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="kemuhaoo != null" >
+        kemuhaoo,
+      </if>
+      <if test="farendma != null" >
+        farendma,
+      </if>
+      <if test="kemumnch != null" >
+        kemumnch,
+      </if>
+      <if test="shjikemu != null" >
+        shjikemu,
+      </if>
+      <if test="kemuleib != null" >
+        kemuleib,
+      </if>
+      <if test="kemujibi != null" >
+        kemujibi,
+      </if>
+      <if test="mocekmbz != null" >
+        mocekmbz,
+      </if>
+      <if test="yuexingz != null" >
+        yuexingz,
+      </if>
+      <if test="bnbwbioz != null" >
+        bnbwbioz,
+      </if>
+      <if test="shijchuo != null" >
+        shijchuo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="kemuhaoo != null" >
+        #{kemuhaoo,jdbcType=VARCHAR},
+      </if>
+      <if test="farendma != null" >
+        #{farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="kemumnch != null" >
+        #{kemumnch,jdbcType=VARCHAR},
+      </if>
+      <if test="shjikemu != null" >
+        #{shjikemu,jdbcType=VARCHAR},
+      </if>
+      <if test="kemuleib != null" >
+        #{kemuleib,jdbcType=VARCHAR},
+      </if>
+      <if test="kemujibi != null" >
+        #{kemujibi,jdbcType=DECIMAL},
+      </if>
+      <if test="mocekmbz != null" >
+        #{mocekmbz,jdbcType=VARCHAR},
+      </if>
+      <if test="yuexingz != null" >
+        #{yuexingz,jdbcType=VARCHAR},
+      </if>
+      <if test="bnbwbioz != null" >
+        #{bnbwbioz,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null" >
+        #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.virugan.tables.ac.hxsysAcKjkemuExample" resultType="java.lang.Integer" >
+    select count(*) from hxsys_ac_kjkemu
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update hxsys_ac_kjkemu
+    <set >
+      <if test="record.kemuhaoo != null" >
+        kemuhaoo = #{record.kemuhaoo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.farendma != null" >
+        farendma = #{record.farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kemumnch != null" >
+        kemumnch = #{record.kemumnch,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shjikemu != null" >
+        shjikemu = #{record.shjikemu,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kemuleib != null" >
+        kemuleib = #{record.kemuleib,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kemujibi != null" >
+        kemujibi = #{record.kemujibi,jdbcType=DECIMAL},
+      </if>
+      <if test="record.mocekmbz != null" >
+        mocekmbz = #{record.mocekmbz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yuexingz != null" >
+        yuexingz = #{record.yuexingz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bnbwbioz != null" >
+        bnbwbioz = #{record.bnbwbioz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shijchuo != null" >
+        shijchuo = #{record.shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update hxsys_ac_kjkemu
+    set kemuhaoo = #{record.kemuhaoo,jdbcType=VARCHAR},
+      farendma = #{record.farendma,jdbcType=VARCHAR},
+      kemumnch = #{record.kemumnch,jdbcType=VARCHAR},
+      shjikemu = #{record.shjikemu,jdbcType=VARCHAR},
+      kemuleib = #{record.kemuleib,jdbcType=VARCHAR},
+      kemujibi = #{record.kemujibi,jdbcType=DECIMAL},
+      mocekmbz = #{record.mocekmbz,jdbcType=VARCHAR},
+      yuexingz = #{record.yuexingz,jdbcType=VARCHAR},
+      bnbwbioz = #{record.bnbwbioz,jdbcType=VARCHAR},
+      shijchuo = #{record.shijchuo,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.virugan.tables.ac.hxsysAcKjkemu" >
+    update hxsys_ac_kjkemu
+    <set >
+      <if test="kemumnch != null" >
+        kemumnch = #{kemumnch,jdbcType=VARCHAR},
+      </if>
+      <if test="shjikemu != null" >
+        shjikemu = #{shjikemu,jdbcType=VARCHAR},
+      </if>
+      <if test="kemuleib != null" >
+        kemuleib = #{kemuleib,jdbcType=VARCHAR},
+      </if>
+      <if test="kemujibi != null" >
+        kemujibi = #{kemujibi,jdbcType=DECIMAL},
+      </if>
+      <if test="mocekmbz != null" >
+        mocekmbz = #{mocekmbz,jdbcType=VARCHAR},
+      </if>
+      <if test="yuexingz != null" >
+        yuexingz = #{yuexingz,jdbcType=VARCHAR},
+      </if>
+      <if test="bnbwbioz != null" >
+        bnbwbioz = #{bnbwbioz,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null" >
+        shijchuo = #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where kemuhaoo = #{kemuhaoo,jdbcType=VARCHAR}
+      and farendma = #{farendma,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.virugan.tables.ac.hxsysAcKjkemu" >
+    update hxsys_ac_kjkemu
+    set kemumnch = #{kemumnch,jdbcType=VARCHAR},
+      shjikemu = #{shjikemu,jdbcType=VARCHAR},
+      kemuleib = #{kemuleib,jdbcType=VARCHAR},
+      kemujibi = #{kemujibi,jdbcType=DECIMAL},
+      mocekmbz = #{mocekmbz,jdbcType=VARCHAR},
+      yuexingz = #{yuexingz,jdbcType=VARCHAR},
+      bnbwbioz = #{bnbwbioz,jdbcType=VARCHAR},
+      shijchuo = #{shijchuo,jdbcType=DECIMAL}
+    where kemuhaoo = #{kemuhaoo,jdbcType=VARCHAR}
+      and farendma = #{farendma,jdbcType=VARCHAR}
+  </update>
+</mapper>
