@@ -8,17 +8,13 @@
     <properties resource="mybatisGenerator.properties" />
 
     <classPathEntry location="${database.jdbcpath}" />
-    <context id="mysqlctx" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+    <context id="mysqlctx" targetRuntime="com.virugan.impl.myIntrospectedTableImpl">
 
-        <!-- 生成的 Java 文件的编码 -->
-        <property name="javaFileEncoding" value="UTF-8" />
-        <!-- 格式化 Java 代码 -->
-        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter" />
-        <!-- 格式化 XML 代码 -->
-        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter" />
+        <property name="mapperTargetPackage" value="${mybatis.interface.package}.ac" />
 
+        <plugin type="com.virugan.impl.myMapperPlugin" />
 
-        <commentGenerator type="com.virugan.generator.MyCommentGenerator"/>
+        <commentGenerator type="com.virugan.impl.myCommentGenerator"/>
 
 
         <jdbcConnection driverClass="${database.driverClass}"  connectionURL="${database.url}" userId="${database.userId}"  password="${database.password}" />
@@ -35,6 +31,7 @@
         <sqlMapGenerator targetPackage="${mybatis.xml.package}.ac"  targetProject="${mybatis.xml.project}">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
+
         <javaClientGenerator type="XMLMAPPER"  targetPackage="${mybatis.interface.package}.ac" targetProject="${mybatis.interface.project}">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
