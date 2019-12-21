@@ -2,7 +2,7 @@ package com.virugan.servimpl;
 
 import com.virugan.myTemple.MyJdbcTempleWithCache;
 import com.virugan.service.kemuhaooServ;
-import com.virugan.tables.ac.hxsysAcKemut;
+import com.virugan.tables.ac.hxsysAcKjkemu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,29 +13,29 @@ public class kemuhaooServImpl implements kemuhaooServ {
     MyJdbcTempleWithCache myjdbctemplewithcache;
 
     @Override
-    public hxsysAcKemut findKemuxxByPk(hxsysAcKemut acKemut) throws Exception {
-        hxsysAcKemut hxsysAcKemut = myjdbctemplewithcache.selectByPrimaryKey(acKemut);
+    public hxsysAcKjkemu findKemuxxByPk(hxsysAcKjkemu acKemut) throws Exception {
+        hxsysAcKjkemu hxsysAcKemut = myjdbctemplewithcache.selectByPrimaryKey(acKemut);
         return hxsysAcKemut;
     }
 
     @Override
-    public List<hxsysAcKemut> findKemuxxForList(hxsysAcKemut acKemut) {
+    public List<hxsysAcKjkemu> findKemuxxForList(hxsysAcKjkemu acKemut) {
         return null;
     }
 
     @Override
-    public boolean addKemuxx(hxsysAcKemut acKemut) {
+    public boolean addKemuxx(hxsysAcKjkemu acKemut) {
         boolean status = myjdbctemplewithcache.insert(acKemut);
         return status;
     }
 
     @Override
-    public boolean delKemuxx(hxsysAcKemut acKemut) {
+    public boolean delKemuxx(hxsysAcKjkemu acKemut) {
         return false;
     }
 
     @Override
-    public boolean modifyKemuxx(hxsysAcKemut acKemut) throws Exception {
+    public boolean modifyKemuxx(hxsysAcKjkemu acKemut) throws Exception {
         boolean status = myjdbctemplewithcache.updateByPrimaryKey(acKemut);
         return status;
     }

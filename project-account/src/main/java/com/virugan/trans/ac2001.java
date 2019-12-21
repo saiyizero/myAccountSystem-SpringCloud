@@ -4,7 +4,7 @@ import com.virugan.context.myLogger;
 import com.virugan.io.ac.ac2001.ac2001es;
 import com.virugan.io.ac.ac2001.ac2001is;
 import com.virugan.service.kemuhaooServ;
-import com.virugan.tables.ac.hxsysAcKemut;
+import com.virugan.tables.ac.hxsysAcKjkemu;
 import com.virugan.utils.myBeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,13 +26,13 @@ public class ac2001 {
     public List<ac2001es> execute(ac2001is is) throws Exception {
         mylogger.debug("===================================ac2001 start===================================");
         mylogger.debugToObject("ac2001is",is);
-        hxsysAcKemut hxsysackemut = new hxsysAcKemut();
+        hxsysAcKjkemu hxsysackemut = new hxsysAcKjkemu();
         List<ac2001es> ac2001esList = new ArrayList<>();
         myBeanUtils.copyByName(is,hxsysackemut);
 
 
-        List<hxsysAcKemut> list = kemuhaooServ.findKemuxxForList(hxsysackemut);
-        for(hxsysAcKemut ackemut:list){
+        List<hxsysAcKjkemu> list = kemuhaooServ.findKemuxxForList(hxsysackemut);
+        for(hxsysAcKjkemu ackemut:list){
             com.virugan.io.ac.ac2001.ac2001es ac2001es = new ac2001es();
             myBeanUtils.copyByName(ac2001es,ackemut);
             ac2001esList.add(ac2001es);

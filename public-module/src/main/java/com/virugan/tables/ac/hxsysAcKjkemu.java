@@ -1,10 +1,10 @@
 package com.virugan.tables.ac;
 
+import com.virugan.interfac.myComponent;
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.List;
+import java.util.LinkedHashMap;
 
-public class hxsysAcKjkemu extends Object {
+public class hxsysAcKjkemu extends myComponent {
     /** 科目名称 **/
     private String kemumnch;
 
@@ -28,6 +28,12 @@ public class hxsysAcKjkemu extends Object {
 
     /** 时间戳 **/
     private BigDecimal shijchuo;
+
+    /** 科目号 **/
+    private String kemuhaoo;
+
+    /** 法人代码 **/
+    private String farendma;
 
     public String getKemumnch() {
         return kemumnch;
@@ -93,7 +99,28 @@ public class hxsysAcKjkemu extends Object {
         this.shijchuo = shijchuo;
     }
 
-    public List<String> getPrimaryKey() {
-        return Arrays.asList("kemuhaoo","farendma");
+    public String getKemuhaoo() {
+        return kemuhaoo;
+    }
+
+    public void setKemuhaoo(String kemuhaoo) {
+        this.kemuhaoo = kemuhaoo == null ? null : kemuhaoo.trim();
+    }
+
+    public String getFarendma() {
+        return farendma;
+    }
+
+    public void setFarendma(String farendma) {
+        this.farendma = farendma == null ? null : farendma.trim();
+    }
+
+    public LinkedHashMap getPrimaryKey() {
+        if(primkeyMap==null){
+               primkeyMap=new LinkedHashMap<String,Object>();
+        }
+        primkeyMap.put("kemuhaoo",this.kemuhaoo);
+        primkeyMap.put("farendma",this.farendma);
+        return primkeyMap;
     }
 }

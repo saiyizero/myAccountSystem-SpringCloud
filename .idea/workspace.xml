@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44321ef5-9d6f-43d6-9df7-8ecdac0fae2d" name="Default Changelist" comment="20191218">
-      <change afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/java/com/virugan/mapper/ac/hxsysAcKjkemuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/java/com/virugan/tables/ac/hxsysAcKjkemu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/localjar/mybatis-generator-plug.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/mapping/ac/hxsysAcKjkemuMapper.xml" afterDir="false" />
+    <list default="true" id="44321ef5-9d6f-43d6-9df7-8ecdac0fae2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/interfac/myComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/localjar/mybatis-generator-plugins.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-debt/project-debt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/service/kemuhaooServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/service/kemuhaooServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/servimpl/kemuhaooServImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/servimpl/kemuhaooServImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2001.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2002.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2002.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/java/com/virugan/generator/MyCommentGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/java/com/virugan/mapper/ac/hxsysAcKjkemuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/mapper/ac/hxsysAcKjkemuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/java/com/virugan/tables/ac/hxsysAcKjkemu.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/tables/ac/hxsysAcKjkemu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/localjar/mybatis-generator-plug.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/mapping/ac/hxsysAcKjkemuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public-module/src/main/resources/mapping/ac/hxsysAcKjkemuMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/mybatisGenerator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/mybatisGenerator.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,8 +85,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.virugan" />
       <recent name="com.virugan.tables.ac" />
+      <recent name="com.virugan.tables" />
+      <recent name="com.virugan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\public-springboot-mybatis\src\main\resources\localjar" />
@@ -166,6 +170,7 @@
       <workItem from="1576780559202" duration="1022000" />
       <workItem from="1576817511284" duration="1231000" />
       <workItem from="1576825194044" duration="5271000" />
+      <workItem from="1576943741656" duration="6531000" />
     </task>
     <task id="LOCAL-00001" summary="20191220">
       <created>1576781499580</created>
@@ -186,6 +191,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="20191220" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="181" key="#Inspections" timestamp="1576941256196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1576941256196" />
     <state x="552" y="181" key="#Project_Structure" timestamp="1576780268196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,6 +203,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="140" y="94" width="1142" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1576640181332" />
+    <state x="688" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576941485358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="688" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576941485358" />
     <state x="688" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1576829174656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,26 +226,26 @@
     </state>
     <state x="513" y="350" width="365" height="170" key="Github.CreateGistDialog/0.0.1368.872@0.0.1368.872" timestamp="1576653509199" />
     <state x="720" y="417" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576777563887" />
-    <state width="1326" height="271" key="GridCell.Tab.0.bottom" timestamp="1576929282030">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576951517601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1326" height="271" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576929282030" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576830634121" />
-    <state width="1326" height="271" key="GridCell.Tab.0.center" timestamp="1576929282029">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576951517601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1326" height="271" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1576929282029" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576830634121" />
-    <state width="1326" height="271" key="GridCell.Tab.0.left" timestamp="1576929282029">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576951517601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1326" height="271" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1576929282029" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576830634121" />
-    <state width="1326" height="271" key="GridCell.Tab.0.right" timestamp="1576929282029">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576951517601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1326" height="271" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1576929282029" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576830634121" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
     <state width="1326" height="321" key="GridCell.Tab.1.bottom" timestamp="1576640194554">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

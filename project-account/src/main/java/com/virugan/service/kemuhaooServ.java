@@ -1,6 +1,6 @@
 package com.virugan.service;
 
-import com.virugan.tables.ac.hxsysAcKemut;
+import com.virugan.tables.ac.hxsysAcKjkemu;
 
 import java.util.List;
 
@@ -10,13 +10,13 @@ import java.util.List;
  * **/
 public interface kemuhaooServ {
     //根据主键查找科目信息
-    public hxsysAcKemut findKemuxxByPk(hxsysAcKemut acKemut) throws Exception;
+    public hxsysAcKjkemu findKemuxxByPk(hxsysAcKjkemu acKemut) throws Exception;
     //模糊查询科目信息
-    public List<hxsysAcKemut> findKemuxxForList(hxsysAcKemut acKemut) throws Exception;
+    public List<hxsysAcKjkemu> findKemuxxForList(hxsysAcKjkemu acKemut) throws Exception;
     //新增科目信息
-    public boolean addKemuxx(hxsysAcKemut acKemut) throws Exception;
+    public boolean addKemuxx(hxsysAcKjkemu acKemut) throws Exception;
     //删除科目信息
-    public boolean delKemuxx(hxsysAcKemut acKemut) throws Exception;
+    public boolean delKemuxx(hxsysAcKjkemu acKemut) throws Exception;
     //维护科目信息
-    public boolean modifyKemuxx(hxsysAcKemut acKemut) throws Exception;
+    public boolean modifyKemuxx(hxsysAcKjkemu acKemut) throws Exception;
 }

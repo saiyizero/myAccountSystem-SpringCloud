@@ -4,7 +4,7 @@ import com.virugan.context.myLogger;
 import com.virugan.io.ac.ac2001.ac2001es;
 import com.virugan.io.ac.ac2002.ac2002es;
 import com.virugan.io.ac.ac2002.ac2002is;
-import com.virugan.tables.ac.hxsysAcKemut;
+import com.virugan.tables.ac.hxsysAcKjkemu;
 import com.virugan.utils.myBeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,11 +31,11 @@ public class ac2002 {
         mylogger.debug("===================================ac2002 start===================================");
         mylogger.debugToObject("ac2002is",is);
 
-        hxsysAcKemut hxsysackemut = new hxsysAcKemut();
+        hxsysAcKjkemu hxsysackemut = new hxsysAcKjkemu();
         myBeanUtils.copyByName(is,hxsysackemut);
         ac2002es ac2002es = new ac2002es();
 
-        hxsysAcKemut kemuxxresult = kemuhaooServ.findKemuxxByPk(hxsysackemut);
+        hxsysAcKjkemu kemuxxresult = kemuhaooServ.findKemuxxByPk(hxsysackemut);
         if(kemuxxresult!=null){
             kemuhaooServ.modifyKemuxx(hxsysackemut);
         }else{
