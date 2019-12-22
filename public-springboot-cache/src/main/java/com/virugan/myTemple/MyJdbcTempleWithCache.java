@@ -1,7 +1,7 @@
 package com.virugan.myTemple;
 
 import com.virugan.context.myLogger;
-import com.virugan.interfaces.myDbHandle;
+import com.virugan.interfac.myDbHandle;
 import com.virugan.myException.myCheckException;
 import com.virugan.utils.myBeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +34,7 @@ public class MyJdbcTempleWithCache {
         Object args[]=new Object[size];
 
         sql.append("insert into ");
-        sql.append(myDbHandle.toChangeTableNames(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
         sql.append(" (");
         int i=0;
 
@@ -73,7 +73,7 @@ public class MyJdbcTempleWithCache {
         Object args[]=new Object[KeyMap.size()+EntityMap.size()];
 
         sql.append("update ");
-        sql.append(myDbHandle.toChangeTableNames(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
         sql.append(" set ");
         int i=0;
         for(String key: EntityMap.keySet()){
@@ -109,7 +109,7 @@ public class MyJdbcTempleWithCache {
         StringBuffer sql = new StringBuffer();
         Map<String, Object> EntityMap = myBeanUtils.getKeyAndValue(tableEntity);
         sql.append("select * from ");
-        sql.append(myDbHandle.toChangeTableNames(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
         List<String> list = getTablePrimaryKey(tableEntity.getClass().getSimpleName());
         if(list.size()<=0){
             throw myCheckException.isNotExistException(tableEntity.getClass().getSimpleName()+" the PK");
@@ -154,7 +154,7 @@ public class MyJdbcTempleWithCache {
         Object args[]=new Object[size];
 
         sql.append("update ");
-        sql.append(myDbHandle.toChangeTableNames(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
         sql.append(" set ");
         int i=0;
         for(String key: EntityMap.keySet()){
@@ -192,7 +192,7 @@ public class MyJdbcTempleWithCache {
     public List<String> getTablePrimaryKey(String tableName){
         StringBuilder sql = new StringBuilder();
         sql.append("select column_name from information_schema.key_column_usage where table_name=?");
-        tableName=myDbHandle.toChangeTableNames(tableName);
+        tableName=myDbHandle.getTableName(tableName);
         myLogger.debug("sql",sql);
         myLogger.debug("param",tableName);
         List<String> list = jdbcTemplate.queryForList(sql.toString(), String.class, tableName);

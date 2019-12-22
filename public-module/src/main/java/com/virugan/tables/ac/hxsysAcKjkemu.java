@@ -123,4 +123,8 @@ public class hxsysAcKjkemu extends myComponent {
         primkeyMap.put("farendma",this.farendma);
         return primkeyMap;
     }
+
+    public String getTableName() {
+        return "hxsys_ac_kjkemu";
+    }
 }

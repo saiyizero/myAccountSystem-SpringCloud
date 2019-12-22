@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.virugan.mapper.as.hxsysAsNbzhmxMapper">
+  <resultMap id="basicResultMap" type="com.virugan.tables.as.hxsysAsNbzhmx">
+    <id column="jiaoyils" jdbcType="VARCHAR" property="jiaoyils" />
+    <id column="jiaoyixh" jdbcType="DECIMAL" property="jiaoyixh" />
+    <id column="jiaoyirq" jdbcType="VARCHAR" property="jiaoyirq" />
+    <id column="farendma" jdbcType="VARCHAR" property="farendma" />
+    <result column="zhanghao" jdbcType="VARCHAR" property="zhanghao" />
+    <result column="zhanghmc" jdbcType="VARCHAR" property="zhanghmc" />
+    <result column="zhjiriqi" jdbcType="VARCHAR" property="zhjiriqi" />
+    <result column="jiaoyisj" jdbcType="DECIMAL" property="jiaoyisj" />
+    <result column="quanjuls" jdbcType="VARCHAR" property="quanjuls" />
+    <result column="jiaoyigy" jdbcType="VARCHAR" property="jiaoyigy" />
+    <result column="jiaoyima" jdbcType="VARCHAR" property="jiaoyima" />
+    <result column="jiaoyijg" jdbcType="VARCHAR" property="jiaoyijg" />
+    <result column="zhyngyjg" jdbcType="VARCHAR" property="zhyngyjg" />
+    <result column="huobdaih" jdbcType="VARCHAR" property="huobdaih" />
+    <result column="yewubima" jdbcType="VARCHAR" property="yewubima" />
+    <result column="hesuandm" jdbcType="VARCHAR" property="hesuandm" />
+    <result column="ywshijfs" jdbcType="VARCHAR" property="ywshijfs" />
+    <result column="jiaoyije" jdbcType="DECIMAL" property="jiaoyije" />
+    <result column="zhanghye" jdbcType="DECIMAL" property="zhanghye" />
+    <result column="yuancwrq" jdbcType="VARCHAR" property="yuancwrq" />
+    <result column="yuanczls" jdbcType="VARCHAR" property="yuanczls" />
+    <result column="shujgxbz" jdbcType="VARCHAR" property="shujgxbz" />
+    <result column="beizhuxx" jdbcType="VARCHAR" property="beizhuxx" />
+    <result column="zhwuclbz" jdbcType="VARCHAR" property="zhwuclbz" />
+    <result column="yuefangx" jdbcType="VARCHAR" property="yuefangx" />
+    <result column="shijchuo" jdbcType="DECIMAL" property="shijchuo" />
+  </resultMap>
+  <sql id="baseColumnList">
+    jiaoyils, jiaoyixh, jiaoyirq, farendma, zhanghao, zhanghmc, zhjiriqi, jiaoyisj, quanjuls, 
+    jiaoyigy, jiaoyima, jiaoyijg, zhyngyjg, huobdaih, yewubima, hesuandm, ywshijfs, jiaoyije, 
+    zhanghye, yuancwrq, yuanczls, shujgxbz, beizhuxx, zhwuclbz, yuefangx, shijchuo
+  </sql>
+  <select id="mySelect" parameterType="com.virugan.tables.as.hxsysAsNbzhmx" resultMap="basicResultMap">
+    select
+    <include refid="baseColumnList" />
+    from hxsys_as_nbzhmx
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="jiaoyils!=null">
+        AND  jiaoyils=#{jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyixh!=null">
+        AND  jiaoyixh=#{jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="jiaoyirq!=null">
+        AND  jiaoyirq=#{jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghao!=null">
+        AND  zhanghao=#{zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghmc!=null">
+        AND  zhanghmc=#{zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="zhjiriqi!=null">
+        AND  zhjiriqi=#{zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyisj!=null">
+        AND  jiaoyisj=#{jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="quanjuls!=null">
+        AND  quanjuls=#{quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyigy!=null">
+        AND  jiaoyigy=#{jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyima!=null">
+        AND  jiaoyima=#{jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyijg!=null">
+        AND  jiaoyijg=#{jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="zhyngyjg!=null">
+        AND  zhyngyjg=#{zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="huobdaih!=null">
+        AND  huobdaih=#{huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="ywshijfs!=null">
+        AND  ywshijfs=#{ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyije!=null">
+        AND  jiaoyije=#{jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="zhanghye!=null">
+        AND  zhanghye=#{zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="yuancwrq!=null">
+        AND  yuancwrq=#{yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="yuanczls!=null">
+        AND  yuanczls=#{yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="shujgxbz!=null">
+        AND  shujgxbz=#{shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="beizhuxx!=null">
+        AND  beizhuxx=#{beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="zhwuclbz!=null">
+        AND  zhwuclbz=#{zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="yuefangx!=null">
+        AND  yuefangx=#{yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <delete id="myDelete" parameterType="com.virugan.tables.as.hxsysAsNbzhmx">
+    delete from hxsys_as_nbzhmx
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="jiaoyils!=null">
+        AND  jiaoyils=#{jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyixh!=null">
+        AND  jiaoyixh=#{jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="jiaoyirq!=null">
+        AND  jiaoyirq=#{jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghao!=null">
+        AND  zhanghao=#{zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghmc!=null">
+        AND  zhanghmc=#{zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="zhjiriqi!=null">
+        AND  zhjiriqi=#{zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyisj!=null">
+        AND  jiaoyisj=#{jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="quanjuls!=null">
+        AND  quanjuls=#{quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyigy!=null">
+        AND  jiaoyigy=#{jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyima!=null">
+        AND  jiaoyima=#{jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyijg!=null">
+        AND  jiaoyijg=#{jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="zhyngyjg!=null">
+        AND  zhyngyjg=#{zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="huobdaih!=null">
+        AND  huobdaih=#{huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="ywshijfs!=null">
+        AND  ywshijfs=#{ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyije!=null">
+        AND  jiaoyije=#{jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="zhanghye!=null">
+        AND  zhanghye=#{zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="yuancwrq!=null">
+        AND  yuancwrq=#{yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="yuanczls!=null">
+        AND  yuanczls=#{yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="shujgxbz!=null">
+        AND  shujgxbz=#{shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="beizhuxx!=null">
+        AND  beizhuxx=#{beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="zhwuclbz!=null">
+        AND  zhwuclbz=#{zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="yuefangx!=null">
+        AND  yuefangx=#{yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </delete>
+  <insert id="myInsert" parameterType="com.virugan.tables.as.hxsysAsNbzhmx">
+    insert into hxsys_as_nbzhmx
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="jiaoyils != null">
+        jiaoyils,
+      </if>
+      <if test="jiaoyixh != null">
+        jiaoyixh,
+      </if>
+      <if test="jiaoyirq != null">
+        jiaoyirq,
+      </if>
+      <if test="farendma != null">
+        farendma,
+      </if>
+      <if test="zhanghao != null">
+        zhanghao,
+      </if>
+      <if test="zhanghmc != null">
+        zhanghmc,
+      </if>
+      <if test="zhjiriqi != null">
+        zhjiriqi,
+      </if>
+      <if test="jiaoyisj != null">
+        jiaoyisj,
+      </if>
+      <if test="quanjuls != null">
+        quanjuls,
+      </if>
+      <if test="jiaoyigy != null">
+        jiaoyigy,
+      </if>
+      <if test="jiaoyima != null">
+        jiaoyima,
+      </if>
+      <if test="jiaoyijg != null">
+        jiaoyijg,
+      </if>
+      <if test="zhyngyjg != null">
+        zhyngyjg,
+      </if>
+      <if test="huobdaih != null">
+        huobdaih,
+      </if>
+      <if test="yewubima != null">
+        yewubima,
+      </if>
+      <if test="hesuandm != null">
+        hesuandm,
+      </if>
+      <if test="ywshijfs != null">
+        ywshijfs,
+      </if>
+      <if test="jiaoyije != null">
+        jiaoyije,
+      </if>
+      <if test="zhanghye != null">
+        zhanghye,
+      </if>
+      <if test="yuancwrq != null">
+        yuancwrq,
+      </if>
+      <if test="yuanczls != null">
+        yuanczls,
+      </if>
+      <if test="shujgxbz != null">
+        shujgxbz,
+      </if>
+      <if test="beizhuxx != null">
+        beizhuxx,
+      </if>
+      <if test="zhwuclbz != null">
+        zhwuclbz,
+      </if>
+      <if test="yuefangx != null">
+        yuefangx,
+      </if>
+      <if test="shijchuo != null">
+        shijchuo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="jiaoyils != null">
+        #{jiaoyils,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyixh != null">
+        #{jiaoyixh,jdbcType=DECIMAL},
+      </if>
+      <if test="jiaoyirq != null">
+        #{jiaoyirq,jdbcType=VARCHAR},
+      </if>
+      <if test="farendma != null">
+        #{farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="zhanghao != null">
+        #{zhanghao,jdbcType=VARCHAR},
+      </if>
+      <if test="zhanghmc != null">
+        #{zhanghmc,jdbcType=VARCHAR},
+      </if>
+      <if test="zhjiriqi != null">
+        #{zhjiriqi,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyisj != null">
+        #{jiaoyisj,jdbcType=DECIMAL},
+      </if>
+      <if test="quanjuls != null">
+        #{quanjuls,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyigy != null">
+        #{jiaoyigy,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyima != null">
+        #{jiaoyima,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyijg != null">
+        #{jiaoyijg,jdbcType=VARCHAR},
+      </if>
+      <if test="zhyngyjg != null">
+        #{zhyngyjg,jdbcType=VARCHAR},
+      </if>
+      <if test="huobdaih != null">
+        #{huobdaih,jdbcType=VARCHAR},
+      </if>
+      <if test="yewubima != null">
+        #{yewubima,jdbcType=VARCHAR},
+      </if>
+      <if test="hesuandm != null">
+        #{hesuandm,jdbcType=VARCHAR},
+      </if>
+      <if test="ywshijfs != null">
+        #{ywshijfs,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyije != null">
+        #{jiaoyije,jdbcType=DECIMAL},
+      </if>
+      <if test="zhanghye != null">
+        #{zhanghye,jdbcType=DECIMAL},
+      </if>
+      <if test="yuancwrq != null">
+        #{yuancwrq,jdbcType=VARCHAR},
+      </if>
+      <if test="yuanczls != null">
+        #{yuanczls,jdbcType=VARCHAR},
+      </if>
+      <if test="shujgxbz != null">
+        #{shujgxbz,jdbcType=VARCHAR},
+      </if>
+      <if test="beizhuxx != null">
+        #{beizhuxx,jdbcType=VARCHAR},
+      </if>
+      <if test="zhwuclbz != null">
+        #{zhwuclbz,jdbcType=VARCHAR},
+      </if>
+      <if test="yuefangx != null">
+        #{yuefangx,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null">
+        #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="myCount" parameterType="com.virugan.tables.as.hxsysAsNbzhmx" resultType="int">
+    select count(*) from hxsys_as_nbzhmx
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="jiaoyils!=null">
+        AND  jiaoyils=#{jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyixh!=null">
+        AND  jiaoyixh=#{jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="jiaoyirq!=null">
+        AND  jiaoyirq=#{jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghao!=null">
+        AND  zhanghao=#{zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghmc!=null">
+        AND  zhanghmc=#{zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="zhjiriqi!=null">
+        AND  zhjiriqi=#{zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyisj!=null">
+        AND  jiaoyisj=#{jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="quanjuls!=null">
+        AND  quanjuls=#{quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyigy!=null">
+        AND  jiaoyigy=#{jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyima!=null">
+        AND  jiaoyima=#{jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyijg!=null">
+        AND  jiaoyijg=#{jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="zhyngyjg!=null">
+        AND  zhyngyjg=#{zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="huobdaih!=null">
+        AND  huobdaih=#{huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="ywshijfs!=null">
+        AND  ywshijfs=#{ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyije!=null">
+        AND  jiaoyije=#{jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="zhanghye!=null">
+        AND  zhanghye=#{zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="yuancwrq!=null">
+        AND  yuancwrq=#{yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="yuanczls!=null">
+        AND  yuanczls=#{yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="shujgxbz!=null">
+        AND  shujgxbz=#{shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="beizhuxx!=null">
+        AND  beizhuxx=#{beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="zhwuclbz!=null">
+        AND  zhwuclbz=#{zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="yuefangx!=null">
+        AND  yuefangx=#{yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <update id="myUpdateByExmp">
+    update hxsys_as_nbzhmx
+    <set>
+      <if test="record.jiaoyils != null">
+        jiaoyils = #{record.jiaoyils,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyixh != null">
+        jiaoyixh = #{record.jiaoyixh,jdbcType=DECIMAL},
+      </if>
+      <if test="record.jiaoyirq != null">
+        jiaoyirq = #{record.jiaoyirq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.farendma != null">
+        farendma = #{record.farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhanghao != null">
+        zhanghao = #{record.zhanghao,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhanghmc != null">
+        zhanghmc = #{record.zhanghmc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhjiriqi != null">
+        zhjiriqi = #{record.zhjiriqi,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyisj != null">
+        jiaoyisj = #{record.jiaoyisj,jdbcType=DECIMAL},
+      </if>
+      <if test="record.quanjuls != null">
+        quanjuls = #{record.quanjuls,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyigy != null">
+        jiaoyigy = #{record.jiaoyigy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyima != null">
+        jiaoyima = #{record.jiaoyima,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyijg != null">
+        jiaoyijg = #{record.jiaoyijg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhyngyjg != null">
+        zhyngyjg = #{record.zhyngyjg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.huobdaih != null">
+        huobdaih = #{record.huobdaih,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yewubima != null">
+        yewubima = #{record.yewubima,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hesuandm != null">
+        hesuandm = #{record.hesuandm,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ywshijfs != null">
+        ywshijfs = #{record.ywshijfs,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jiaoyije != null">
+        jiaoyije = #{record.jiaoyije,jdbcType=DECIMAL},
+      </if>
+      <if test="record.zhanghye != null">
+        zhanghye = #{record.zhanghye,jdbcType=DECIMAL},
+      </if>
+      <if test="record.yuancwrq != null">
+        yuancwrq = #{record.yuancwrq,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yuanczls != null">
+        yuanczls = #{record.yuanczls,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shujgxbz != null">
+        shujgxbz = #{record.shujgxbz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beizhuxx != null">
+        beizhuxx = #{record.beizhuxx,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhwuclbz != null">
+        zhwuclbz = #{record.zhwuclbz,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yuefangx != null">
+        yuefangx = #{record.yuefangx,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shijchuo != null">
+        shijchuo = #{record.shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="updkey.jiaoyils!=null">
+        AND  jiaoyils=#{updkey.jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyixh!=null">
+        AND  jiaoyixh=#{updkey.jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="updkey.jiaoyirq!=null">
+        AND  jiaoyirq=#{updkey.jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.farendma!=null">
+        AND  farendma=#{updkey.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhanghao!=null">
+        AND  zhanghao=#{updkey.zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhanghmc!=null">
+        AND  zhanghmc=#{updkey.zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhjiriqi!=null">
+        AND  zhjiriqi=#{updkey.zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyisj!=null">
+        AND  jiaoyisj=#{updkey.jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="updkey.quanjuls!=null">
+        AND  quanjuls=#{updkey.quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyigy!=null">
+        AND  jiaoyigy=#{updkey.jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyima!=null">
+        AND  jiaoyima=#{updkey.jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyijg!=null">
+        AND  jiaoyijg=#{updkey.jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhyngyjg!=null">
+        AND  zhyngyjg=#{updkey.zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.huobdaih!=null">
+        AND  huobdaih=#{updkey.huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.yewubima!=null">
+        AND  yewubima=#{updkey.yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.hesuandm!=null">
+        AND  hesuandm=#{updkey.hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.ywshijfs!=null">
+        AND  ywshijfs=#{updkey.ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.jiaoyije!=null">
+        AND  jiaoyije=#{updkey.jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="updkey.zhanghye!=null">
+        AND  zhanghye=#{updkey.zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="updkey.yuancwrq!=null">
+        AND  yuancwrq=#{updkey.yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.yuanczls!=null">
+        AND  yuanczls=#{updkey.yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.shujgxbz!=null">
+        AND  shujgxbz=#{updkey.shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.beizhuxx!=null">
+        AND  beizhuxx=#{updkey.beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhwuclbz!=null">
+        AND  zhwuclbz=#{updkey.zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.yuefangx!=null">
+        AND  yuefangx=#{updkey.yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.shijchuo!=null">
+        AND  shijchuo=#{updkey.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </update>
+  <update id="myUpdateOne" parameterType="com.virugan.tables.as.hxsysAsNbzhmx">
+    update hxsys_as_nbzhmx
+    <set>
+      <if test="zhanghao != null">
+        zhanghao = #{zhanghao,jdbcType=VARCHAR},
+      </if>
+      <if test="zhanghmc != null">
+        zhanghmc = #{zhanghmc,jdbcType=VARCHAR},
+      </if>
+      <if test="zhjiriqi != null">
+        zhjiriqi = #{zhjiriqi,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyisj != null">
+        jiaoyisj = #{jiaoyisj,jdbcType=DECIMAL},
+      </if>
+      <if test="quanjuls != null">
+        quanjuls = #{quanjuls,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyigy != null">
+        jiaoyigy = #{jiaoyigy,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyima != null">
+        jiaoyima = #{jiaoyima,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyijg != null">
+        jiaoyijg = #{jiaoyijg,jdbcType=VARCHAR},
+      </if>
+      <if test="zhyngyjg != null">
+        zhyngyjg = #{zhyngyjg,jdbcType=VARCHAR},
+      </if>
+      <if test="huobdaih != null">
+        huobdaih = #{huobdaih,jdbcType=VARCHAR},
+      </if>
+      <if test="yewubima != null">
+        yewubima = #{yewubima,jdbcType=VARCHAR},
+      </if>
+      <if test="hesuandm != null">
+        hesuandm = #{hesuandm,jdbcType=VARCHAR},
+      </if>
+      <if test="ywshijfs != null">
+        ywshijfs = #{ywshijfs,jdbcType=VARCHAR},
+      </if>
+      <if test="jiaoyije != null">
+        jiaoyije = #{jiaoyije,jdbcType=DECIMAL},
+      </if>
+      <if test="zhanghye != null">
+        zhanghye = #{zhanghye,jdbcType=DECIMAL},
+      </if>
+      <if test="yuancwrq != null">
+        yuancwrq = #{yuancwrq,jdbcType=VARCHAR},
+      </if>
+      <if test="yuanczls != null">
+        yuanczls = #{yuanczls,jdbcType=VARCHAR},
+      </if>
+      <if test="shujgxbz != null">
+        shujgxbz = #{shujgxbz,jdbcType=VARCHAR},
+      </if>
+      <if test="beizhuxx != null">
+        beizhuxx = #{beizhuxx,jdbcType=VARCHAR},
+      </if>
+      <if test="zhwuclbz != null">
+        zhwuclbz = #{zhwuclbz,jdbcType=VARCHAR},
+      </if>
+      <if test="yuefangx != null">
+        yuefangx = #{yuefangx,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null">
+        shijchuo = #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where jiaoyils = #{jiaoyils,jdbcType=VARCHAR}
+      and jiaoyixh = #{jiaoyixh,jdbcType=DECIMAL}
+      and jiaoyirq = #{jiaoyirq,jdbcType=VARCHAR}
+      and farendma = #{farendma,jdbcType=VARCHAR}
+  </update>
+  <select id="mySelectOne" parameterType="com.virugan.tables.as.hxsysAsNbzhmx" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_as_nbzhmx
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="jiaoyils!=null">
+        AND  jiaoyils=#{jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyixh!=null">
+        AND  jiaoyixh=#{jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="jiaoyirq!=null">
+        AND  jiaoyirq=#{jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghao!=null">
+        AND  zhanghao=#{zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhanghmc!=null">
+        AND  zhanghmc=#{zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="zhjiriqi!=null">
+        AND  zhjiriqi=#{zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyisj!=null">
+        AND  jiaoyisj=#{jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="quanjuls!=null">
+        AND  quanjuls=#{quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyigy!=null">
+        AND  jiaoyigy=#{jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyima!=null">
+        AND  jiaoyima=#{jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyijg!=null">
+        AND  jiaoyijg=#{jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="zhyngyjg!=null">
+        AND  zhyngyjg=#{zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="huobdaih!=null">
+        AND  huobdaih=#{huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="ywshijfs!=null">
+        AND  ywshijfs=#{ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="jiaoyije!=null">
+        AND  jiaoyije=#{jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="zhanghye!=null">
+        AND  zhanghye=#{zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="yuancwrq!=null">
+        AND  yuancwrq=#{yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="yuanczls!=null">
+        AND  yuanczls=#{yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="shujgxbz!=null">
+        AND  shujgxbz=#{shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="beizhuxx!=null">
+        AND  beizhuxx=#{beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="zhwuclbz!=null">
+        AND  zhwuclbz=#{zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="yuefangx!=null">
+        AND  yuefangx=#{yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <select id="mySelectPage" parameterType="com.virugan.tables.as.hxsysAsNbzhmx" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_as_nbzhmx
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="record.jiaoyils!=null">
+        AND  jiaoyils=#{record.jiaoyils,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyixh!=null">
+        AND  jiaoyixh=#{record.jiaoyixh,jdbcType=DECIMAL}
+      </if>
+      <if test="record.jiaoyirq!=null">
+        AND  jiaoyirq=#{record.jiaoyirq,jdbcType=VARCHAR}
+      </if>
+      <if test="record.farendma!=null">
+        AND  farendma=#{record.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhanghao!=null">
+        AND  zhanghao=#{record.zhanghao,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhanghmc!=null">
+        AND  zhanghmc=#{record.zhanghmc,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhjiriqi!=null">
+        AND  zhjiriqi=#{record.zhjiriqi,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyisj!=null">
+        AND  jiaoyisj=#{record.jiaoyisj,jdbcType=DECIMAL}
+      </if>
+      <if test="record.quanjuls!=null">
+        AND  quanjuls=#{record.quanjuls,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyigy!=null">
+        AND  jiaoyigy=#{record.jiaoyigy,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyima!=null">
+        AND  jiaoyima=#{record.jiaoyima,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyijg!=null">
+        AND  jiaoyijg=#{record.jiaoyijg,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhyngyjg!=null">
+        AND  zhyngyjg=#{record.zhyngyjg,jdbcType=VARCHAR}
+      </if>
+      <if test="record.huobdaih!=null">
+        AND  huobdaih=#{record.huobdaih,jdbcType=VARCHAR}
+      </if>
+      <if test="record.yewubima!=null">
+        AND  yewubima=#{record.yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="record.hesuandm!=null">
+        AND  hesuandm=#{record.hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="record.ywshijfs!=null">
+        AND  ywshijfs=#{record.ywshijfs,jdbcType=VARCHAR}
+      </if>
+      <if test="record.jiaoyije!=null">
+        AND  jiaoyije=#{record.jiaoyije,jdbcType=DECIMAL}
+      </if>
+      <if test="record.zhanghye!=null">
+        AND  zhanghye=#{record.zhanghye,jdbcType=DECIMAL}
+      </if>
+      <if test="record.yuancwrq!=null">
+        AND  yuancwrq=#{record.yuancwrq,jdbcType=VARCHAR}
+      </if>
+      <if test="record.yuanczls!=null">
+        AND  yuanczls=#{record.yuanczls,jdbcType=VARCHAR}
+      </if>
+      <if test="record.shujgxbz!=null">
+        AND  shujgxbz=#{record.shujgxbz,jdbcType=VARCHAR}
+      </if>
+      <if test="record.beizhuxx!=null">
+        AND  beizhuxx=#{record.beizhuxx,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhwuclbz!=null">
+        AND  zhwuclbz=#{record.zhwuclbz,jdbcType=VARCHAR}
+      </if>
+      <if test="record.yuefangx!=null">
+        AND  yuefangx=#{record.yuefangx,jdbcType=VARCHAR}
+      </if>
+      <if test="record.shijchuo!=null">
+        AND  shijchuo=#{record.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+</mapper>

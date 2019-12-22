@@ -7,4 +7,6 @@ public abstract class myComponent {
     protected LinkedHashMap primkeyMap;
 
     public abstract LinkedHashMap getPrimaryKey();
+
+    public abstract String getTableName();
 }

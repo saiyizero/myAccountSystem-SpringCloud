@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.virugan.mapper.as.hxsysAsZjywbmMapper">
+  <resultMap id="basicResultMap" type="com.virugan.tables.as.hxsysAsZjywbm">
+    <result column="farendma" jdbcType="VARCHAR" property="farendma" />
+    <result column="zhhuywzl" jdbcType="VARCHAR" property="zhhuywzl" />
+    <result column="yewubima" jdbcType="VARCHAR" property="yewubima" />
+    <result column="ywbimasm" jdbcType="VARCHAR" property="ywbimasm" />
+    <result column="hesuandm" jdbcType="VARCHAR" property="hesuandm" />
+    <result column="zszfywzl" jdbcType="VARCHAR" property="zszfywzl" />
+    <result column="shijchuo" jdbcType="DECIMAL" property="shijchuo" />
+  </resultMap>
+  <sql id="baseColumnList">
+    farendma, zhhuywzl, yewubima, ywbimasm, hesuandm, zszfywzl, shijchuo
+  </sql>
+  <select id="mySelect" parameterType="com.virugan.tables.as.hxsysAsZjywbm" resultMap="basicResultMap">
+    select
+    <include refid="baseColumnList" />
+    from hxsys_as_zjywbm
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhuywzl!=null">
+        AND  zhhuywzl=#{zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="ywbimasm!=null">
+        AND  ywbimasm=#{ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="zszfywzl!=null">
+        AND  zszfywzl=#{zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <delete id="myDelete" parameterType="com.virugan.tables.as.hxsysAsZjywbm">
+    delete from hxsys_as_zjywbm
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhuywzl!=null">
+        AND  zhhuywzl=#{zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="ywbimasm!=null">
+        AND  ywbimasm=#{ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="zszfywzl!=null">
+        AND  zszfywzl=#{zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </delete>
+  <insert id="myInsert" parameterType="com.virugan.tables.as.hxsysAsZjywbm">
+    insert into hxsys_as_zjywbm
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="farendma != null">
+        farendma,
+      </if>
+      <if test="zhhuywzl != null">
+        zhhuywzl,
+      </if>
+      <if test="yewubima != null">
+        yewubima,
+      </if>
+      <if test="ywbimasm != null">
+        ywbimasm,
+      </if>
+      <if test="hesuandm != null">
+        hesuandm,
+      </if>
+      <if test="zszfywzl != null">
+        zszfywzl,
+      </if>
+      <if test="shijchuo != null">
+        shijchuo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="farendma != null">
+        #{farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="zhhuywzl != null">
+        #{zhhuywzl,jdbcType=VARCHAR},
+      </if>
+      <if test="yewubima != null">
+        #{yewubima,jdbcType=VARCHAR},
+      </if>
+      <if test="ywbimasm != null">
+        #{ywbimasm,jdbcType=VARCHAR},
+      </if>
+      <if test="hesuandm != null">
+        #{hesuandm,jdbcType=VARCHAR},
+      </if>
+      <if test="zszfywzl != null">
+        #{zszfywzl,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null">
+        #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="myCount" parameterType="com.virugan.tables.as.hxsysAsZjywbm" resultType="int">
+    select count(*) from hxsys_as_zjywbm
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhuywzl!=null">
+        AND  zhhuywzl=#{zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="ywbimasm!=null">
+        AND  ywbimasm=#{ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="zszfywzl!=null">
+        AND  zszfywzl=#{zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <update id="myUpdateByExmp">
+    update hxsys_as_zjywbm
+    <set>
+      <if test="record.farendma != null">
+        farendma = #{record.farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhhuywzl != null">
+        zhhuywzl = #{record.zhhuywzl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yewubima != null">
+        yewubima = #{record.yewubima,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ywbimasm != null">
+        ywbimasm = #{record.ywbimasm,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hesuandm != null">
+        hesuandm = #{record.hesuandm,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zszfywzl != null">
+        zszfywzl = #{record.zszfywzl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shijchuo != null">
+        shijchuo = #{record.shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="updkey.farendma!=null">
+        AND  farendma=#{updkey.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhhuywzl!=null">
+        AND  zhhuywzl=#{updkey.zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.yewubima!=null">
+        AND  yewubima=#{updkey.yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.ywbimasm!=null">
+        AND  ywbimasm=#{updkey.ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.hesuandm!=null">
+        AND  hesuandm=#{updkey.hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zszfywzl!=null">
+        AND  zszfywzl=#{updkey.zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.shijchuo!=null">
+        AND  shijchuo=#{updkey.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </update>
+  <select id="mySelectOne" parameterType="com.virugan.tables.as.hxsysAsZjywbm" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_as_zjywbm
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhuywzl!=null">
+        AND  zhhuywzl=#{zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="yewubima!=null">
+        AND  yewubima=#{yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="ywbimasm!=null">
+        AND  ywbimasm=#{ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="hesuandm!=null">
+        AND  hesuandm=#{hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="zszfywzl!=null">
+        AND  zszfywzl=#{zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <select id="mySelectPage" parameterType="com.virugan.tables.as.hxsysAsZjywbm" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_as_zjywbm
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="record.farendma!=null">
+        AND  farendma=#{record.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhhuywzl!=null">
+        AND  zhhuywzl=#{record.zhhuywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="record.yewubima!=null">
+        AND  yewubima=#{record.yewubima,jdbcType=VARCHAR}
+      </if>
+      <if test="record.ywbimasm!=null">
+        AND  ywbimasm=#{record.ywbimasm,jdbcType=VARCHAR}
+      </if>
+      <if test="record.hesuandm!=null">
+        AND  hesuandm=#{record.hesuandm,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zszfywzl!=null">
+        AND  zszfywzl=#{record.zszfywzl,jdbcType=VARCHAR}
+      </if>
+      <if test="record.shijchuo!=null">
+        AND  shijchuo=#{record.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+</mapper>
