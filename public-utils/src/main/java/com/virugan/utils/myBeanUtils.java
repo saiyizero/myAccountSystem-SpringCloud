@@ -15,6 +15,30 @@ import java.util.Map;
 
 public class myBeanUtils {
 
+    public static String createUrlForGetRequest(String url,Object param){
+        if (url == null) {
+            return "";
+        }
+        Map<String, Object> paramMap = getKeyAndValue(param);
+        int i=0;
+        StringBuffer buffer = new StringBuffer(url);
+        for(String key:paramMap.keySet()){
+            if(paramMap.get(key)!=null){
+                if(i==0){
+                    buffer.append("?");
+                }else{
+                    buffer.append("&");
+                }
+                buffer.append(key);
+                buffer.append("=");
+                buffer.append(paramMap.get(key));
+                i=i+1;
+            }
+        }
+        System.out.println("req>>> "+buffer.toString());
+        return buffer.toString();
+    }
+
     //java 反射获取object的key 和valuse
     public static Map<String, Object> getKeyAndValue(Object obj) {
         Map<String, Object> map = new HashMap<String, Object>();

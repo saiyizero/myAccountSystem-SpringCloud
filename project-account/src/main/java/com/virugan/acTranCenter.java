@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class myTranCenter {
+public class acTranCenter {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(myTranCenter.class, args);
+        SpringApplication.run(acTranCenter.class, args);
     }
 }

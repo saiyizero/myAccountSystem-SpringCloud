@@ -24,6 +24,10 @@
         <module>project-assets</module>
         <module>project-account</module>
         <module>public-springboot-mybatis</module>
+        <module>component-Eureka-client</module>
+        <module>public-Eureka-client</module>
+        <module>component-api-getway</module>
+        <module>component-config-server</module>
     </modules>
 
     <parent>

@@ -6,33 +6,42 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project-customer" />
-        <module name="public-module" />
-        <module name="public-springboot-cache" />
-        <module name="public-springboot-jdbc" />
         <module name="public-utils" />
+        <module name="component-Eureka-service" />
+        <module name="public-springboot-cache" />
+        <module name="component-config-server" />
         <module name="project-debt" />
         <module name="project-account" />
-        <module name="public-springboot-mybatis" />
+        <module name="public-Eureka-client" />
+        <module name="project-customer" />
         <module name="project-organization" />
         <module name="project-assets" />
-        <module name="component-Eureka-service" />
+        <module name="public-module" />
+        <module name="component-api-getway" />
+        <module name="public-springboot-jdbc" />
+        <module name="public-springboot-mybatis" />
         <module name="project-payment" />
+        <module name="component-Eureka-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="component-Eureka-client" target="1.8" />
       <module name="project-debtAccount" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="component-Eureka-client" options="-parameters" />
       <module name="component-Eureka-service" options="-parameters" />
+      <module name="component-api-getway" options="-parameters" />
+      <module name="component-config-server" options="-parameters" />
       <module name="project-account" options="-parameters" />
       <module name="project-assets" options="-parameters" />
       <module name="project-customer" options="-parameters" />
       <module name="project-debt" options="-parameters" />
       <module name="project-organization" options="-parameters" />
       <module name="project-payment" options="-parameters" />
+      <module name="public-Eureka-client" options="-parameters" />
       <module name="public-module" options="-parameters" />
       <module name="public-springboot-cache" options="-parameters" />
       <module name="public-springboot-jdbc" options="-parameters" />

@@ -110,6 +110,6 @@ public class myLogger {
     }
 
     public void debugToObject(String paramNme,Object paramVal){
-        System.out.println(debughead+debughead+paramNme +" :["+myBeanUtils.objectToMap(paramVal)+"]");
+        System.out.println(debughead+paramNme +" :["+myBeanUtils.objectToMap(paramVal)+"]");
     }
 }

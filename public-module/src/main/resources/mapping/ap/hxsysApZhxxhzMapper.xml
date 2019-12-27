@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.virugan.mapper.ap.hxsysApZhxxhzMapper">
+  <resultMap id="basicResultMap" type="com.virugan.tables.ap.hxsysApZhxxhz">
+    <id column="farendma" jdbcType="VARCHAR" property="farendma" />
+    <id column="kehuzhao" jdbcType="VARCHAR" property="kehuzhao" />
+    <id column="zhhaoxuh" jdbcType="VARCHAR" property="zhhaoxuh" />
+    <result column="kehuzhlx" jdbcType="VARCHAR" property="kehuzhlx" />
+    <result column="xtzhangh" jdbcType="VARCHAR" property="xtzhangh" />
+    <result column="mokuaiii" jdbcType="VARCHAR" property="mokuaiii" />
+    <result column="kaihjigo" jdbcType="VARCHAR" property="kaihjigo" />
+    <result column="kehuhaoo" jdbcType="VARCHAR" property="kehuhaoo" />
+    <result column="shijchuo" jdbcType="DECIMAL" property="shijchuo" />
+  </resultMap>
+  <sql id="baseColumnList">
+    farendma, kehuzhao, zhhaoxuh, kehuzhlx, xtzhangh, mokuaiii, kaihjigo, kehuhaoo, shijchuo
+  </sql>
+  <select id="mySelect" parameterType="com.virugan.tables.ap.hxsysApZhxxhz" resultMap="basicResultMap">
+    select
+    <include refid="baseColumnList" />
+    from hxsys_ap_zhxxhz
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhao!=null">
+        AND  kehuzhao=#{kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhaoxuh!=null">
+        AND  zhhaoxuh=#{zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhlx!=null">
+        AND  kehuzhlx=#{kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="xtzhangh!=null">
+        AND  xtzhangh=#{xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="mokuaiii!=null">
+        AND  mokuaiii=#{mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="kaihjigo!=null">
+        AND  kaihjigo=#{kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuhaoo!=null">
+        AND  kehuhaoo=#{kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <delete id="myDelete" parameterType="com.virugan.tables.ap.hxsysApZhxxhz">
+    delete from hxsys_ap_zhxxhz
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhao!=null">
+        AND  kehuzhao=#{kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhaoxuh!=null">
+        AND  zhhaoxuh=#{zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhlx!=null">
+        AND  kehuzhlx=#{kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="xtzhangh!=null">
+        AND  xtzhangh=#{xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="mokuaiii!=null">
+        AND  mokuaiii=#{mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="kaihjigo!=null">
+        AND  kaihjigo=#{kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuhaoo!=null">
+        AND  kehuhaoo=#{kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </delete>
+  <insert id="myInsert" parameterType="com.virugan.tables.ap.hxsysApZhxxhz">
+    insert into hxsys_ap_zhxxhz
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="farendma != null">
+        farendma,
+      </if>
+      <if test="kehuzhao != null">
+        kehuzhao,
+      </if>
+      <if test="zhhaoxuh != null">
+        zhhaoxuh,
+      </if>
+      <if test="kehuzhlx != null">
+        kehuzhlx,
+      </if>
+      <if test="xtzhangh != null">
+        xtzhangh,
+      </if>
+      <if test="mokuaiii != null">
+        mokuaiii,
+      </if>
+      <if test="kaihjigo != null">
+        kaihjigo,
+      </if>
+      <if test="kehuhaoo != null">
+        kehuhaoo,
+      </if>
+      <if test="shijchuo != null">
+        shijchuo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="farendma != null">
+        #{farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuzhao != null">
+        #{kehuzhao,jdbcType=VARCHAR},
+      </if>
+      <if test="zhhaoxuh != null">
+        #{zhhaoxuh,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuzhlx != null">
+        #{kehuzhlx,jdbcType=VARCHAR},
+      </if>
+      <if test="xtzhangh != null">
+        #{xtzhangh,jdbcType=VARCHAR},
+      </if>
+      <if test="mokuaiii != null">
+        #{mokuaiii,jdbcType=VARCHAR},
+      </if>
+      <if test="kaihjigo != null">
+        #{kaihjigo,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuhaoo != null">
+        #{kehuhaoo,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null">
+        #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="myCount" parameterType="com.virugan.tables.ap.hxsysApZhxxhz" resultType="int">
+    select count(*) from hxsys_ap_zhxxhz
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhao!=null">
+        AND  kehuzhao=#{kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhaoxuh!=null">
+        AND  zhhaoxuh=#{zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhlx!=null">
+        AND  kehuzhlx=#{kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="xtzhangh!=null">
+        AND  xtzhangh=#{xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="mokuaiii!=null">
+        AND  mokuaiii=#{mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="kaihjigo!=null">
+        AND  kaihjigo=#{kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuhaoo!=null">
+        AND  kehuhaoo=#{kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <update id="myUpdateByExmp">
+    update hxsys_ap_zhxxhz
+    <set>
+      <if test="record.farendma != null">
+        farendma = #{record.farendma,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuzhao != null">
+        kehuzhao = #{record.kehuzhao,jdbcType=VARCHAR},
+      </if>
+      <if test="record.zhhaoxuh != null">
+        zhhaoxuh = #{record.zhhaoxuh,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuzhlx != null">
+        kehuzhlx = #{record.kehuzhlx,jdbcType=VARCHAR},
+      </if>
+      <if test="record.xtzhangh != null">
+        xtzhangh = #{record.xtzhangh,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mokuaiii != null">
+        mokuaiii = #{record.mokuaiii,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kaihjigo != null">
+        kaihjigo = #{record.kaihjigo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.kehuhaoo != null">
+        kehuhaoo = #{record.kehuhaoo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shijchuo != null">
+        shijchuo = #{record.shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="updkey.farendma!=null">
+        AND  farendma=#{updkey.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.kehuzhao!=null">
+        AND  kehuzhao=#{updkey.kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.zhhaoxuh!=null">
+        AND  zhhaoxuh=#{updkey.zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.kehuzhlx!=null">
+        AND  kehuzhlx=#{updkey.kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.xtzhangh!=null">
+        AND  xtzhangh=#{updkey.xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.mokuaiii!=null">
+        AND  mokuaiii=#{updkey.mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.kaihjigo!=null">
+        AND  kaihjigo=#{updkey.kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.kehuhaoo!=null">
+        AND  kehuhaoo=#{updkey.kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="updkey.shijchuo!=null">
+        AND  shijchuo=#{updkey.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </update>
+  <update id="myUpdateOne" parameterType="com.virugan.tables.ap.hxsysApZhxxhz">
+    update hxsys_ap_zhxxhz
+    <set>
+      <if test="kehuzhlx != null">
+        kehuzhlx = #{kehuzhlx,jdbcType=VARCHAR},
+      </if>
+      <if test="xtzhangh != null">
+        xtzhangh = #{xtzhangh,jdbcType=VARCHAR},
+      </if>
+      <if test="mokuaiii != null">
+        mokuaiii = #{mokuaiii,jdbcType=VARCHAR},
+      </if>
+      <if test="kaihjigo != null">
+        kaihjigo = #{kaihjigo,jdbcType=VARCHAR},
+      </if>
+      <if test="kehuhaoo != null">
+        kehuhaoo = #{kehuhaoo,jdbcType=VARCHAR},
+      </if>
+      <if test="shijchuo != null">
+        shijchuo = #{shijchuo,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where farendma = #{farendma,jdbcType=VARCHAR}
+      and kehuzhao = #{kehuzhao,jdbcType=VARCHAR}
+      and zhhaoxuh = #{zhhaoxuh,jdbcType=VARCHAR}
+  </update>
+  <select id="mySelectOne" parameterType="com.virugan.tables.ap.hxsysApZhxxhz" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_ap_zhxxhz
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="farendma!=null">
+        AND  farendma=#{farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhao!=null">
+        AND  kehuzhao=#{kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="zhhaoxuh!=null">
+        AND  zhhaoxuh=#{zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuzhlx!=null">
+        AND  kehuzhlx=#{kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="xtzhangh!=null">
+        AND  xtzhangh=#{xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="mokuaiii!=null">
+        AND  mokuaiii=#{mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="kaihjigo!=null">
+        AND  kaihjigo=#{kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="kehuhaoo!=null">
+        AND  kehuhaoo=#{kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="shijchuo!=null">
+        AND  shijchuo=#{shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+  <select id="mySelectPage" parameterType="com.virugan.tables.ap.hxsysApZhxxhz" resultMap="basicResultMap">
+    select 
+    <include refid="baseColumnList" />
+    from hxsys_ap_zhxxhz
+    <trim prefix="WHERE" prefixOverrides="AND">
+      <if test="record.farendma!=null">
+        AND  farendma=#{record.farendma,jdbcType=VARCHAR}
+      </if>
+      <if test="record.kehuzhao!=null">
+        AND  kehuzhao=#{record.kehuzhao,jdbcType=VARCHAR}
+      </if>
+      <if test="record.zhhaoxuh!=null">
+        AND  zhhaoxuh=#{record.zhhaoxuh,jdbcType=VARCHAR}
+      </if>
+      <if test="record.kehuzhlx!=null">
+        AND  kehuzhlx=#{record.kehuzhlx,jdbcType=VARCHAR}
+      </if>
+      <if test="record.xtzhangh!=null">
+        AND  xtzhangh=#{record.xtzhangh,jdbcType=VARCHAR}
+      </if>
+      <if test="record.mokuaiii!=null">
+        AND  mokuaiii=#{record.mokuaiii,jdbcType=VARCHAR}
+      </if>
+      <if test="record.kaihjigo!=null">
+        AND  kaihjigo=#{record.kaihjigo,jdbcType=VARCHAR}
+      </if>
+      <if test="record.kehuhaoo!=null">
+        AND  kehuhaoo=#{record.kehuhaoo,jdbcType=VARCHAR}
+      </if>
+      <if test="record.shijchuo!=null">
+        AND  shijchuo=#{record.shijchuo,jdbcType=DECIMAL}
+      </if>
+    </trim>
+  </select>
+</mapper>
