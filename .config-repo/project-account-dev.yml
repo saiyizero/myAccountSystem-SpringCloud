@@ -12,7 +12,7 @@ spring:
       password: sa26212835
 
    application:
-      name: project-account
+      name: project-accounts
 
 server:
    port: 8721
