@@ -8,7 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/hellxz/SpringCloudlearn
-          search-paths: config-repo
-          username: username
-          password: password
+          uri: https://github.com/saiyizero/myspringcloud-config
+          search-paths: myaccountsystem-config
+          username: saiyizero
+          password: sa26212835
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8661/eureka/

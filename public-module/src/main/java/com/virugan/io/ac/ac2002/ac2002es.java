@@ -1,64 +1,112 @@
 package com.virugan.io.ac.ac2002;
 
+import java.math.BigDecimal;
+
 public class ac2002es {
-    //法人代码
-    private String faredma;
-    //科目号
-    private Integer kemuhoo;
-    //科目级别
-    private Integer kemujib;
-    //科目类型
-    private String kemulex;
-    //科目中文名
-    private String kemunme;
-    //科目描述
-    private String kemumas;
+    /** 科目名称 **/
+    private String kemumnch;
 
-    public String getFaredma() {
-        return faredma;
+    /** 上级科目 **/
+    private String shjikemu;
+
+    /** 科目类别 **/
+    private String kemuleib;
+
+    /** 科目级别 **/
+    private BigDecimal kemujibi;
+
+    /** 末层科目标志 **/
+    private String mocekmbz;
+
+    /** 余额性质 **/
+    private String yuexingz;
+
+    /** 表内表外标志 **/
+    private String bnbwbioz;
+
+    /** 时间戳 **/
+    private BigDecimal shijchuo;
+
+    /** 科目号 **/
+    private String kemuhaoo;
+
+    /** 法人代码 **/
+    private String farendma;
+
+    public String getKemumnch() {
+        return kemumnch;
     }
 
-    public void setFaredma(String faredma) {
-        this.faredma = faredma;
+    public void setKemumnch(String kemumnch) {
+        this.kemumnch = kemumnch == null ? null : kemumnch.trim();
     }
 
-    public Integer getKemuhoo() {
-        return kemuhoo;
+    public String getShjikemu() {
+        return shjikemu;
     }
 
-    public void setKemuhoo(Integer kemuhoo) {
-        this.kemuhoo = kemuhoo;
+    public void setShjikemu(String shjikemu) {
+        this.shjikemu = shjikemu == null ? null : shjikemu.trim();
     }
 
-    public Integer getKemujib() {
-        return kemujib;
+    public String getKemuleib() {
+        return kemuleib;
     }
 
-    public void setKemujib(Integer kemujib) {
-        this.kemujib = kemujib;
+    public void setKemuleib(String kemuleib) {
+        this.kemuleib = kemuleib == null ? null : kemuleib.trim();
     }
 
-    public String getKemulex() {
-        return kemulex;
+    public BigDecimal getKemujibi() {
+        return kemujibi;
     }
 
-    public void setKemulex(String kemulex) {
-        this.kemulex = kemulex;
+    public void setKemujibi(BigDecimal kemujibi) {
+        this.kemujibi = kemujibi;
     }
 
-    public String getKemunme() {
-        return kemunme;
+    public String getMocekmbz() {
+        return mocekmbz;
     }
 
-    public void setKemunme(String kemunme) {
-        this.kemunme = kemunme;
+    public void setMocekmbz(String mocekmbz) {
+        this.mocekmbz = mocekmbz == null ? null : mocekmbz.trim();
     }
 
-    public String getKemumas() {
-        return kemumas;
+    public String getYuexingz() {
+        return yuexingz;
     }
 
-    public void setKemumas(String kemumas) {
-        this.kemumas = kemumas;
+    public void setYuexingz(String yuexingz) {
+        this.yuexingz = yuexingz == null ? null : yuexingz.trim();
     }
+
+    public String getBnbwbioz() {
+        return bnbwbioz;
+    }
+
+    public void setBnbwbioz(String bnbwbioz) {
+        this.bnbwbioz = bnbwbioz == null ? null : bnbwbioz.trim();
+    }
+
+    public BigDecimal getShijchuo() {
+        return shijchuo;
+    }
+
+    public void setShijchuo(BigDecimal shijchuo) {
+        this.shijchuo = shijchuo;
+    }
+
+    public String getKemuhaoo() {
+        return kemuhaoo;
+    }
+
+    public void setKemuhaoo(String kemuhaoo) {
+        this.kemuhaoo = kemuhaoo == null ? null : kemuhaoo.trim();
+    }
+
+    public String getFarendma() {
+        return farendma;
+    }
+
 }

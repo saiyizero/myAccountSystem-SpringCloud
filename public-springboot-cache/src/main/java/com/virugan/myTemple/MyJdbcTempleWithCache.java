@@ -12,6 +12,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,7 +35,7 @@ public class MyJdbcTempleWithCache {
         Object args[]=new Object[size];
 
         sql.append("insert into ");
-        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity));
         sql.append(" (");
         int i=0;
 
@@ -73,7 +74,7 @@ public class MyJdbcTempleWithCache {
         Object args[]=new Object[KeyMap.size()+EntityMap.size()];
 
         sql.append("update ");
-        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity));
         sql.append(" set ");
         int i=0;
         for(String key: EntityMap.keySet()){
@@ -109,14 +110,14 @@ public class MyJdbcTempleWithCache {
         StringBuffer sql = new StringBuffer();
         Map<String, Object> EntityMap = myBeanUtils.getKeyAndValue(tableEntity);
         sql.append("select * from ");
-        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
-        List<String> list = getTablePrimaryKey(tableEntity.getClass().getSimpleName());
-        if(list.size()<=0){
+        sql.append(myDbHandle.getTableName(tableEntity));
+        LinkedHashMap<String,Object> pkMap = myDbHandle.getPrimaryKey(tableEntity);
+        if(pkMap.size()<=0){
             throw myCheckException.isNotExistException(tableEntity.getClass().getSimpleName()+" the PK");
         }
-        Object args[]=new Object[list.size()];
+        Object args[]=new Object[pkMap.size()];
         int i=0;
-        for(String key: list){
+        for(String key: pkMap.keySet()){
             if(EntityMap.containsKey(key)&& EntityMap.get(key)!=null){
                 if(i<=0){
                     sql.append(" where ");
@@ -148,13 +149,13 @@ public class MyJdbcTempleWithCache {
     public <T> boolean updateByPrimaryKey(T tableEntity) throws Exception {
         StringBuffer sql = new StringBuffer();
         StringBuffer val = new StringBuffer();
-        List<String> list = getTablePrimaryKey(tableEntity.getClass().getSimpleName());
+        LinkedHashMap<String,Object> pkMap = myDbHandle.getPrimaryKey(tableEntity);
         Map<String, Object> EntityMap = myBeanUtils.getKeyAndValue(tableEntity);
-        int size=list.size()+EntityMap.size();
+        int size=pkMap.size()+EntityMap.size();
         Object args[]=new Object[size];
 
         sql.append("update ");
-        sql.append(myDbHandle.getTableName(tableEntity.getClass().getSimpleName()));
+        sql.append(myDbHandle.getTableName(tableEntity));
         sql.append(" set ");
         int i=0;
         for(String key: EntityMap.keySet()){
@@ -168,7 +169,7 @@ public class MyJdbcTempleWithCache {
             i=i+1;
         }
         sql.append(" where ");
-        for(String key: list){
+        for(String key: pkMap.keySet()){
             sql.append(key);
             sql.append("=?");
             if(i<size-1){
@@ -187,15 +188,4 @@ public class MyJdbcTempleWithCache {
         }
     }
 
-
-    @Cacheable(key = "'MyTablePKmap:'+#p0",unless = "#result==null||#result.isEmpty()")
-    public List<String> getTablePrimaryKey(String tableName){
-        StringBuilder sql = new StringBuilder();
-        sql.append("select column_name from information_schema.key_column_usage where table_name=?");
-        tableName=myDbHandle.getTableName(tableName);
-        myLogger.debug("sql",sql);
-        myLogger.debug("param",tableName);
-        List<String> list = jdbcTemplate.queryForList(sql.toString(), String.class, tableName);
-        return list;
-    }
 }

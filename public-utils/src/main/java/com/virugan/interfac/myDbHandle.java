@@ -21,7 +21,7 @@ public abstract class myDbHandle {
         }
     }
 
-    public LinkedHashMap getPrimaryKey(Object mycomponent){
+    public LinkedHashMap<String,Object> getPrimaryKey(Object mycomponent){
         if(mycomponent instanceof myComponent){
             return ((myComponent) mycomponent).getPrimaryKey();
         }else {
