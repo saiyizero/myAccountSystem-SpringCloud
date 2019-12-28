@@ -1,6 +1,5 @@
 package com.virugan.servimpl;
 
-import com.virugan.context.myLogger;
 import com.virugan.mapper.as.hxsysAsNbfhzhMapper;
 import com.virugan.service.insideAcctServ;
 import com.virugan.tables.as.hxsysAsNbfhzh;
@@ -13,8 +12,7 @@ import java.util.List;
 public class insideAcctServImpl implements insideAcctServ {
     @Autowired
     hxsysAsNbfhzhMapper hxsysasnbfhzhmapper;
-    @Autowired
-    myLogger mylogger;
+
     @Override
     public hxsysAsNbfhzh openAcct(hxsysAsNbfhzh hxsysasnbfhzh) throws Exception {
         return null;
@@ -27,11 +25,7 @@ public class insideAcctServImpl implements insideAcctServ {
 
     @Override
     public hxsysAsNbfhzh queryAcctMsgSingle(hxsysAsNbfhzh hxsysasnbfhzh) throws Exception {
-        mylogger.debug(">>>>>>>>>>>>>transMessgeServImpl.acctNoMsgQuery>>>>>>>>>>>>>");
-        mylogger.debugToObject("hxsysasnbfhzh input",hxsysasnbfhzh);
         hxsysAsNbfhzh hxsysAsNbfhzh = hxsysasnbfhzhmapper.mySelectOne(hxsysasnbfhzh);
-        mylogger.debugToObject("hxsysasnbfhzh ountput",hxsysasnbfhzh);
-        mylogger.debug("<<<<<<<<<<<<<transMessgeServImpl.acctNoMsgQuery<<<<<<<<<<<<<");
         return hxsysAsNbfhzh;
     }
 

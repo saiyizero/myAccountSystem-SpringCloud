@@ -1,0 +1,18 @@
+[
+  {
+    args=
+  [
+    Ljava.lang.Object
+    ;
+    @1868fa6,
+    signature=as7001es
+    com.virugan.trans.as7001.execute(as7001is),
+    kind=method-execution,
+    this=com.virugan.trans.as7001@d69837,
+    sourceLocation=org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint$SourceLocationImpl@16f9a66,
+    id=0,
+    staticPart=execution(as7001es com.virugan.trans.as7001.execute(as7001is)),
+    $AroundClosure=null,
+    target=com.virugan.trans.as7001@d69837
+    }
+  ]

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: project-assets
+  cloud:
+    config:
+      uri: http://localhost:9001/
+      profile: dev

@@ -2,21 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44321ef5-9d6f-43d6-9df7-8ecdac0fae2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project-account/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.config-repo/project-account-dev.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component-config-server/src/main/resources/schema/hxsys_ap_prptis_v1.0.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mystr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-assets/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-payment/src/main/java/com/virugan/webclient/insideAcctWebClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public-utils/src/main/java/com/virugan/intercept/myLogInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component-config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/component-config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component-config-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/component-config-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-account/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-account/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component-config-server/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/acTranCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/acTranCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2001.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2002.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-account/src/main/java/com/virugan/trans/ac2002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/servimpl/insideAcctServImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/servimpl/insideAcctServImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/trans/as7001.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/trans/as7001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/webservice/insideAcctWebServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-assets/src/main/java/com/virugan/webservice/insideAcctWebServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-assets/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-payment/src/main/java/com/virugan/servimpl/transMessgeServImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-payment/src/main/java/com/virugan/servimpl/transMessgeServImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-payment/src/main/java/com/virugan/trans/py6001.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-payment/src/main/java/com/virugan/trans/py6001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public-Eureka-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public-Eureka-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/io/ac/ac2002/ac2002es.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/io/ac/ac2002/ac2002es.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/io/ac/ac2002/ac2002is.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-module/src/main/java/com/virugan/io/ac/ac2002/ac2002is.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-springboot-cache/src/main/java/com/virugan/impl/TableKeyGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-cache/src/main/java/com/virugan/impl/TableKeyGeneratorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-springboot-cache/src/main/java/com/virugan/myTemple/MyJdbcTempleWithCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-cache/src/main/java/com/virugan/myTemple/MyJdbcTempleWithCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-springboot-mybatis/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-utils/src/main/java/com/virugan/interfac/myDbHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/public-utils/src/main/java/com/virugan/interfac/myDbHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-cache/target/classes/com/virugan/impl/TableKeyGeneratorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-cache/target/classes/com/virugan/impl/TableKeyGeneratorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-springboot-cache/target/classes/com/virugan/myTemple/MyJdbcTempleWithCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/public-springboot-cache/target/classes/com/virugan/myTemple/MyJdbcTempleWithCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public-utils/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +88,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.config-repo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/eureka_server/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26206896" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -91,9 +103,9 @@
       <recent name="com.virugan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\project-assets\src\main\resources" />
       <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\.config-repo" />
       <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\project-payment\src\main\resources" />
-      <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\project-assets\src\main\resources" />
       <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\public-springboot-mybatis\src\main\resources" />
       <recent name="C:\Users\86159\myWorkSpace\myAccountSystem-SpringCloud\public-springboot-mybatis\src\main\resources\localjar" />
     </key>
@@ -105,7 +117,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.acTranCenter">
+  <component name="RunManager" selected="Spring Boot.asTranCenter">
     <configuration name="acTranCenter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="project-account" />
       <extension name="coverage">
@@ -180,10 +192,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.acTranCenter" />
+        <item itemvalue="Spring Boot.asTranCenter" />
         <item itemvalue="Spring Boot.myConfigCenter" />
         <item itemvalue="Spring Boot.myServCenter" />
-        <item itemvalue="Spring Boot.asTranCenter" />
+        <item itemvalue="Spring Boot.acTranCenter" />
         <item itemvalue="Spring Boot.pyTranCenter" />
       </list>
     </recent_temporary>
@@ -202,7 +214,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -239,7 +256,8 @@
       <workItem from="1577079594963" duration="12956000" />
       <workItem from="1577423052767" duration="3804000" />
       <workItem from="1577447429048" duration="3227000" />
-      <workItem from="1577450733105" duration="3571000" />
+      <workItem from="1577450733105" duration="3841000" />
+      <workItem from="1577520388477" duration="13476000" />
     </task>
     <task id="LOCAL-00001" summary="20191220">
       <created>1576781499580</created>
@@ -262,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577448177858</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20191220">
+      <created>1577454351701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577454351701</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,10 +308,10 @@
     </state>
     <state x="393" y="152" key="#Project_Structure/0.0.1368.872@0.0.1368.872" timestamp="1577447910293" />
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1576780268196" />
-    <state x="140" y="94" width="1142" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577077865490">
+    <state x="140" y="94" width="1142" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577525447243">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="140" y="94" width="1142" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1577077865490" />
+    <state x="140" y="94" width="1142" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1577525447243" />
     <state x="688" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576941485358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,10 +321,10 @@
     </state>
     <state x="490" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1577076658834" />
     <state x="688" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576829174656" />
-    <state x="229" y="69" key="CommitChangelistDialog2" timestamp="1577448172000">
+    <state x="229" y="69" key="CommitChangelistDialog2" timestamp="1577454346409">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="229" y="69" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1577448172000" />
+    <state x="229" y="69" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1577454346409" />
     <state x="392" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576781498340" />
     <state width="461" height="466" key="DebuggerActiveHint" timestamp="1577454161367">
       <screen x="0" y="0" width="1368" height="872" />
@@ -309,85 +334,85 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="93" y="93" width="1181" height="685" key="DiffContextDialog/0.0.1368.872@0.0.1368.872" timestamp="1576981458062" />
-    <state x="653" y="231" key="FileChooserDialogImpl" timestamp="1576779177516">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="465" y="194" key="FileChooserDialogImpl" timestamp="1577535409768">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="465" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1576653524619" />
+    <state x="465" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1577535409768" />
     <state x="653" y="231" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576779177516" />
     <state x="720" y="417" width="365" height="170" key="Github.CreateGistDialog" timestamp="1576777563887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="513" y="350" width="365" height="170" key="Github.CreateGistDialog/0.0.1368.872@0.0.1368.872" timestamp="1576653509199" />
     <state x="720" y="417" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576777563887" />
-    <state width="1078" height="383" key="GridCell.Tab.0.bottom" timestamp="1577454309881">
+    <state width="1078" height="401" key="GridCell.Tab.0.bottom" timestamp="1577535175048">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577454309881" />
+    <state width="1078" height="401" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577535175048" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
-    <state width="1078" height="383" key="GridCell.Tab.0.center" timestamp="1577454309880">
+    <state width="1078" height="401" key="GridCell.Tab.0.center" timestamp="1577535175045">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1577454309880" />
+    <state width="1078" height="401" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1577535175045" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
-    <state width="1078" height="383" key="GridCell.Tab.0.left" timestamp="1577454309880">
+    <state width="1078" height="401" key="GridCell.Tab.0.left" timestamp="1577535175038">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1577454309880" />
+    <state width="1078" height="401" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1577535175038" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
-    <state width="1078" height="383" key="GridCell.Tab.0.right" timestamp="1577454309881">
+    <state width="1078" height="401" key="GridCell.Tab.0.right" timestamp="1577535175045">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1577454309881" />
+    <state width="1078" height="401" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1577535175045" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576951517601" />
-    <state width="1078" height="383" key="GridCell.Tab.1.bottom" timestamp="1577454309882">
+    <state width="1078" height="401" key="GridCell.Tab.1.bottom" timestamp="1577535175050">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577454309882" />
-    <state width="1078" height="383" key="GridCell.Tab.1.center" timestamp="1577454309882">
+    <state width="1078" height="401" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577535175050" />
+    <state width="1078" height="401" key="GridCell.Tab.1.center" timestamp="1577535175049">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1577454309882" />
-    <state width="1078" height="383" key="GridCell.Tab.1.left" timestamp="1577454309881">
+    <state width="1078" height="401" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1577535175049" />
+    <state width="1078" height="401" key="GridCell.Tab.1.left" timestamp="1577535175049">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1577454309881" />
-    <state width="1078" height="383" key="GridCell.Tab.1.right" timestamp="1577454309882">
+    <state width="1078" height="401" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1577535175049" />
+    <state width="1078" height="401" key="GridCell.Tab.1.right" timestamp="1577535175050">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1577454309882" />
-    <state width="1078" height="383" key="GridCell.Tab.2.bottom" timestamp="1577454309883">
+    <state width="1078" height="401" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1577535175050" />
+    <state width="1078" height="401" key="GridCell.Tab.2.bottom" timestamp="1577533110009">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.2.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577454309883" />
-    <state width="1078" height="383" key="GridCell.Tab.2.center" timestamp="1577454309883">
+    <state width="1078" height="401" key="GridCell.Tab.2.bottom/0.0.1368.872@0.0.1368.872" timestamp="1577533110009" />
+    <state width="1078" height="401" key="GridCell.Tab.2.center" timestamp="1577533110009">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.2.center/0.0.1368.872@0.0.1368.872" timestamp="1577454309883" />
-    <state width="1078" height="383" key="GridCell.Tab.2.left" timestamp="1577454309882">
+    <state width="1078" height="401" key="GridCell.Tab.2.center/0.0.1368.872@0.0.1368.872" timestamp="1577533110009" />
+    <state width="1078" height="401" key="GridCell.Tab.2.left" timestamp="1577533110008">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.2.left/0.0.1368.872@0.0.1368.872" timestamp="1577454309882" />
-    <state width="1078" height="383" key="GridCell.Tab.2.right" timestamp="1577454309883">
+    <state width="1078" height="401" key="GridCell.Tab.2.left/0.0.1368.872@0.0.1368.872" timestamp="1577533110008" />
+    <state width="1078" height="401" key="GridCell.Tab.2.right" timestamp="1577533110009">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1078" height="383" key="GridCell.Tab.2.right/0.0.1368.872@0.0.1368.872" timestamp="1577454309883" />
-    <state x="215" y="94" key="Maven.ArtifactSearchDialog" timestamp="1576597758139">
+    <state width="1078" height="401" key="GridCell.Tab.2.right/0.0.1368.872@0.0.1368.872" timestamp="1577533110009" />
+    <state x="215" y="94" key="Maven.ArtifactSearchDialog" timestamp="1577535840481">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="215" y="94" key="Maven.ArtifactSearchDialog/0.0.1368.872@0.0.1368.872" timestamp="1576597758139" />
-    <state x="165" y="14" key="SettingsEditor" timestamp="1576641054020">
+    <state x="215" y="94" key="Maven.ArtifactSearchDialog/0.0.1368.872@0.0.1368.872" timestamp="1577535840481" />
+    <state x="165" y="14" key="SettingsEditor" timestamp="1577526320100">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="165" y="14" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1576641054020" />
-    <state x="393" y="214" key="Vcs.Push.Dialog.v2" timestamp="1577448328566">
+    <state x="165" y="14" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1577526320100" />
+    <state x="393" y="214" key="Vcs.Push.Dialog.v2" timestamp="1577454363043">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="393" y="214" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1577448328566" />
+    <state x="393" y="214" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1577454363043" />
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576781511827" />
-    <state x="373" y="195" width="620" height="490" key="find.popup" timestamp="1577450798575">
+    <state x="373" y="195" width="620" height="490" key="find.popup" timestamp="1577533413024">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="373" y="195" width="620" height="490" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1577450798575" />
+    <state x="373" y="195" width="620" height="490" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1577533413024" />
     <state x="608" y="321" key="git4idea.merge.GitPullDialog" timestamp="1576777468215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,9 +421,9 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="102" y="200" key="new project wizard/0.0.1368.872@0.0.1368.872" timestamp="1577437300652" />
-    <state x="361" y="198" width="672" height="678" key="search.everywhere.popup" timestamp="1577453952829">
+    <state x="363" y="200" width="672" height="678" key="search.everywhere.popup" timestamp="1577530564873">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="361" y="198" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1577453952829" />
+    <state x="363" y="200" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1577530564873" />
   </component>
 </project>

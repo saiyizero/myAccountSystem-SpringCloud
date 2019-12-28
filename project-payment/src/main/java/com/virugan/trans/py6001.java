@@ -1,7 +1,6 @@
 package com.virugan.trans;
 
 import com.virugan.comptype.py.acctNoMsgCtx;
-import com.virugan.context.myLogger;
 import com.virugan.io.py.py6001es;
 import com.virugan.io.py.py6001is;
 import com.virugan.service.transMessgeServ;
@@ -18,14 +17,10 @@ public class py6001 {
 
     @Autowired
     transMessgeServ transMsgServ;
-    @Autowired
-    myLogger mylogger;
+
 
     @RequestMapping("/myAccountSystem/py/py6001")
     public py6001es execute(py6001is is) throws Exception {
-        mylogger.debug("===================================py6001 start===================================");
-        mylogger.debugToObject("py6001is",is);
-
         acctNoMsgCtx acctnomsgctx = new acctNoMsgCtx();
         myBeanUtils.copyByName(is,acctnomsgctx);
 
@@ -34,8 +29,6 @@ public class py6001 {
         py6001es resultEs = new py6001es();
         myBeanUtils.copyByName(result,resultEs);
 
-        mylogger.debugToObject("py6001es",resultEs);
-        mylogger.debug("===================================py6001   end===================================");
         return resultEs;
     }
 }

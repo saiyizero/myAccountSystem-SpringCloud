@@ -1,9 +1,7 @@
 package com.virugan.trans;
 
-import com.virugan.context.myLogger;
 import com.virugan.io.ac.ac2001.ac2001es;
 import com.virugan.io.ac.ac2001.ac2001is;
-import com.virugan.service.kemuhaooServ;
 import com.virugan.tables.ac.hxsysAcKjkemu;
 import com.virugan.utils.myBeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +18,9 @@ public class ac2001 {
 
     @Autowired
     com.virugan.service.kemuhaooServ kemuhaooServ;
-    @Autowired
-    myLogger mylogger;
 
     public List<ac2001es> execute(ac2001is is) throws Exception {
-        mylogger.debug("===================================ac2001 start===================================");
-        mylogger.debugToObject("ac2001is",is);
+
         hxsysAcKjkemu hxsysackemut = new hxsysAcKjkemu();
         List<ac2001es> ac2001esList = new ArrayList<>();
         myBeanUtils.copyByName(is,hxsysackemut);
@@ -37,8 +32,6 @@ public class ac2001 {
             myBeanUtils.copyByName(ac2001es,ackemut);
             ac2001esList.add(ac2001es);
         }
-        mylogger.debugToObject("ac2001es",ac2001esList);
-        mylogger.debug("===================================ac2001   end===================================");
         return ac2001esList;
     }
 }
