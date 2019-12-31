@@ -142,8 +142,7 @@ public class myBeanUtils {
     }
 
     public static Map<String, Object> objectToMap(Object obj)  {
-        if(obj == null)
-            return null;
+
         Map<String, Object> map = new HashMap<String, Object>();
         BeanInfo beanInfo;
         try {
@@ -156,16 +155,12 @@ public class myBeanUtils {
                 }
                 Method getter = property.getReadMethod();
                 Object value = getter!=null ? getter.invoke(obj) : null;
-                map.put(key, value);
+                if(value!=null){
+                    map.put(key, value);
+                }
             }
-        } catch (IntrospectionException e) {
-            e.printStackTrace();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+
         }
 
         return map;

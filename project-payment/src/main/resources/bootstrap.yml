@@ -1,6 +1,6 @@
 spring:
   application:
-    name: project-assets
+    name: project-payment
   cloud:
     config:
       uri: http://39.105.142.33:9001/

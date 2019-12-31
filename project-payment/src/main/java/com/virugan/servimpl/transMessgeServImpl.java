@@ -7,7 +7,6 @@ import com.virugan.utils.myBeanUtils;
 import com.virugan.webclient.insideAcctWebClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 public class transMessgeServImpl implements transMessgeServ {
